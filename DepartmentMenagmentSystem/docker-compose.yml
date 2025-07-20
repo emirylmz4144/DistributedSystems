@@ -8,20 +8,20 @@ services:
     depends_on:
       - database
     environment:
-      SPRING_DATASOURCE_URL: jdbc:postgresql://database:5432/Departments
+      SPRING_DATASOURCE_URL: jdbc:postgresql://database:5432/departments
       SPRING_DATASOURCE_USERNAME: postgres
       SPRING_DATASOURCE_PASSWORD: emirEmir41
     networks:
       - mynetwork
 
   app2:
-    build: ./backend/app2
+    build: ./backend/app1
     ports:
       - "8082:8080"
     depends_on:
       - database
     environment:
-      SPRING_DATASOURCE_URL: jdbc:postgresql://database:5432/Departments
+      SPRING_DATASOURCE_URL: jdbc:postgresql://database:5432/departments
       SPRING_DATASOURCE_USERNAME: postgres
       SPRING_DATASOURCE_PASSWORD: emirEmir41
     networks:

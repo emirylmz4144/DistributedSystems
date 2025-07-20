@@ -1,8 +1,0 @@
-server:
-  port: 8082  # İkinci uygulama 8081 portunda çalışacak
-
-spring:
-  datasource:
-    url: jdbc:postgresql://database:5432/Departments
-    username: postgres
-    password: emirEmir41
